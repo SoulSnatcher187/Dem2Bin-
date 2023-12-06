@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec Converter</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 270px;
+            background-color: rgb(30, 195, 113);
+            border-radius: 20px;
+            margin: auto;
+            border: 4px dashed #00ff00;
+            margin-top: 150px; 
+                  }
+        
+        .content{
+            display: grid;
+            place-items: center;
+        }
+
+        .content label{
+            margin-top: 65px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .content button{
+            margin-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .content p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 0.5px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <label for="binaryInput">Enter Binary:</label>
+            <input type="text" id="binaryInput" maxlength="8">
+            <button onclick="convertBinary()">Convert</button>
+            <p id="decimalOutput">Decimal Equivalent: </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
